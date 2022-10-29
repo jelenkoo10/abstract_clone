@@ -21,9 +21,9 @@ Users should be able to:
 
 Desktop and mobile design of Abstract clone.
 
-![](./screenshot1.jpg)
+![](./images/screenshot1.JPG)
 
-![](./screenshot2.jpg)
+![](./images/screenshot2.JPG)
 
 ### Links
 
