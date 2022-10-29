@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-color: #4C5FD5;
+    --bg-color: #DADBF1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 1.5rem;
+    background-color: var(--btn-color);
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.help-button img {
+    width: 20px;
+    height: 20px;
+    padding: 0.05rem;
+    margin: 0 .5rem 0 0;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.help-button span {
+    font-weight: bold;
+}
+
+.help-button:hover,
+.help-button:focus {
+    cursor: pointer;
+}
+
+/* Header section */
+header {
+    background-color: black;
+    padding: .75rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+header h1:hover,
+header h1:focus {
+    cursor: pointer;
+    color: rgb(212, 212, 212);
+}
+
+header h1, 
+header p,
+svg {
+    display: inline-block;
+}
+
+svg {
+    background-color: white;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+header h1,
+header p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+header p, svg {
+    margin: 0 0.5rem;
+}
+
+button {
+    padding: .5rem 1.75rem;
+    font-size: 1.45rem;
+    border: none;
+    border-radius: .5rem;
+    margin-right: .5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.request-btn {
+    border: 1px white solid;
+    background-color: black;
+}
+
+.sign-btn {
+    background-color: var(--btn-color);
+}
+
+.sign-btn:hover,
+.sign-btn:focus {
+    color: black;
+    background-color: white;
+}
+
+/* Search section */
+.search-section {
+    padding: 6rem;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section h1 {
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 0 0 1.5rem;
+}
+
+.search-section input {
+    width: 55%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: .2px solid black;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Info section */
+.info-section {
+    margin: 0 auto;
+    width: 95%;
+    padding: 6.5rem 3rem;
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(2, 42.5%);
+    justify-content: center;
+}
+
+.info-section > div {
+    display: flex;
+}
+
+.info-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 1.5rem;
+    margin-top: .75rem;
+}
+
+.info-section a {
+    text-decoration: none;
+    color: var(--btn-color);
+}
+
+.info-section h1,
+.info-section a {
+    font-size: 1.65rem;
+    margin: .5rem 0;
+}
+
+.info-section p {
+    font-size: 1.75rem;
+    margin: .85rem 0;
+}
+
+/* Footer section */ 
+footer {
+    height: 50vh;
+    padding: 2rem 6.5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    margin: 0.2rem 0;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline white;
+}
+
+footer h1 {
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+}
+
+footer h3 {
+    margin: 2rem 0 0.2rem;
+}
+
+.copyright {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+}
+
+.copyright p {
+    margin: 0.2rem 0;
+    font-size: 1.3rem;
+}
+
+.copyright svg {
+    margin: .5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .help-button {
+        position: relative;
+        display: none;
+    }
+
+    /* Header section */
+    header {
+        padding: 1rem .75rem;
+    }
+
+    header h1,
+    header p {
+        font-size: .9rem;
+    }
+
+    header p,
+    svg {
+        margin: 0 0.2rem;
+    }
+
+    svg {
+        border-radius: .1rem;
+        height: 20px;
+    }
+
+    button {
+        font-size: .8rem;
+        padding: .25rem .5rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .buttons button:nth-child(1) {
+        margin-bottom: .75rem;
+    }
+
+    /* Search section */
+    .search-section {
+        padding: 5rem 2rem;
+    }
+
+    .search-section h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .search-section input {
+        width: 75%;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+
+    /* Info section */
+    .info-section {
+        padding: 4rem 2rem;
+        grid-gap: 2.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .info-img {
+        width: 60px;
+        height: 60px;
+        margin-top: 1.25rem;
+    }
+
+    .info-section a {
+        text-decoration: none;
+        color: var(--btn-color);
+    }
+
+    .info-section h1,
+    .info-section a {
+        font-size: 1.25rem;
+    }
+
+    .info-section p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 1rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer h1 {
+        margin: 1.25rem 0 0.8rem;
+    }
+
+    .copyright {
+        margin: 2rem 0;
+    }
+}
